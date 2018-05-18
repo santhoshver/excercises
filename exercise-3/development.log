@@ -1,0 +1,2105 @@
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:34:21 +053
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (31.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.46ms)
+Completed 200 OK in 117ms (Views: 1.0ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:34:22 +0530
+Processing by StoriesController#show as JSONAPI
+Started GET "/stories/2" for ::1 at 2017-01-11 14:34:22 +0530
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (1.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.0ms)
+  [1m[36mStoryPoint Load (4.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+Completed 200 OK in 66ms (Views: 1.8ms | ActiveRecord: 2.8ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 64ms (Views: 1.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:34:38 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:36:37 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (1.7ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.58ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:36:40 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (2.3ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:39:22 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:39:22 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.62ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/story-points?filter%5Bstory_id%5D=1" for ::1 at 2017-01-11 14:39:23 +0530
+Processing by StoryPointsController#index as JSONAPI
+  Parameters: {"filter"=>{"story_id"=>"1"}}
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:39:25 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (1.6ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.63ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/stories/2" for ::1 at 2017-01-11 14:39:25 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (1.3ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (1.2ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:39:47 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:39:48 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (1.0ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:43:46 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:43:47 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.61ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:43:47 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.63ms)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/2" for ::1 at 2017-01-11 14:43:47 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.64ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:47:02 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:47:03 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.56ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:47:03 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/2" for ::1 at 2017-01-11 14:47:03 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:47:28 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.37ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:47:28 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.61ms)
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:47:28 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-11 14:47:28 +0530
+  [1m[36mStory Load (1.7ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (1.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+  [1m[36mStory Load (3.3ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.57ms)
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:48:25 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (6.3ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.92ms)
+Completed 200 OK in 63ms (Views: 28.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:48:26 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (3.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (2.7ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.14ms)
+Completed 200 OK in 20ms (Views: 1.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:48:26 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-11 14:48:26 +0530
+  [1m[36mStory Load (2.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (5.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 7.6ms)
+
+
+  [1m[36mStory Load (7.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (3.9ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.12ms)
+Completed 200 OK in 19ms (Views: 1.9ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:48:47 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.48ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:48:53 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.9ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.98ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/login" for ::1 at 2017-01-11 14:49:48 +0530
+Processing by ApplicationController#login as */*
+  Parameters: {"email"=>"Naveen@srijan.net"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'Naveen@srijan.net' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 47ms (Views: 1.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:49:51 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-11 14:49:52 +0530
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:49:52 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mSprint Load (19.3ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (6.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mStory Load (3.0ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.91ms)
+Completed 200 OK in 32ms (Views: 1.9ms | ActiveRecord: 22.3ms)
+
+
+  [1m[36mStoryPoint Load (4.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.77ms)
+Completed 200 OK in 42ms (Views: 2.9ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:49:52 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-11 14:49:52 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (2.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (1.8ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (2.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.88ms)
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mStoryPoint Load (5.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.78ms)
+Completed 200 OK in 15ms (Views: 1.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/story-points?filter%5Bstory_id%5D=1" for ::1 at 2017-01-11 14:50:15 +0530
+Processing by StoryPointsController#index as JSONAPI
+  Parameters: {"filter"=>{"story_id"=>"1"}}
+  [1m[36mStoryPoint Load (2.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.79ms)
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-11 14:50:22 +0530
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:50:22 +0530
+Processing by UsersController#index as JSONAPI
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mSprint Load (2.2ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStory Load (6.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.04ms)
+Completed 200 OK in 16ms (Views: 1.7ms | ActiveRecord: 8.8ms)
+
+
+  [1m[36mStoryPoint Load (4.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mStoryPoint Load (1.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.8ms)
+Completed 200 OK in 23ms (Views: 1.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:50:22 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-11 14:50:22 +0530
+  [1m[36mStory Load (1.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (3.9ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 13ms (Views: 1.6ms | ActiveRecord: 5.3ms)
+
+
+  [1m[36mStory Load (6.9ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 18ms (Views: 1.3ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:51:47 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.9ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.78ms)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-11 14:51:47 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.97ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-11 14:51:47 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:51:47 +0530
+  [1m[36mStoryPoint Load (1.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+Processing by SprintsController#show as JSONAPI
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 13ms (Views: 1.7ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mSprint Load (1.2ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.82ms)
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:51:48 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Started GET "/stories/2" for ::1 at 2017-01-11 14:51:48 +0530
+  [1m[36mStoryPoint Load (1.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.94ms)
+Processing by StoriesController#show as JSONAPI
+Completed 200 OK in 13ms (Views: 4.3ms | ActiveRecord: 1.9ms)
+
+
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.19ms)
+Completed 200 OK in 12ms (Views: 3.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-11 14:52:33 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-11 14:52:37 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+Started GET "/sprints/1" for ::1 at 2017-01-11 14:52:37 +0530
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStoryPoint Load (1.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mSprint Load (0.7ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (1.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 3.9ms)
+
+
+  [1m[36mStory Load (2.0ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.59ms)
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-11 14:52:37 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-11 14:52:37 +0530
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (1.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mStory Load (4.0ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 11ms (Views: 1.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/story-points?filter%5Bstory_id%5D=1" for ::1 at 2017-01-11 14:52:39 +0530
+Processing by StoryPointsController#index as JSONAPI
+  Parameters: {"filter"=>{"story_id"=>"1"}}
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 20:52:23 +0530
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/sprints" for ::1 at 2017-01-13 20:52:32 +0530
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/sprints" for ::1 at 2017-01-13 20:53:46 +0530
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysqld.sock' (2)):
+
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/sprints" for ::1 at 2017-01-13 20:55:26 +0530
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `connect'
+mysql2 (0.4.5) lib/mysql2/client.rb:89:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/sprints" for ::1 at 2017-01-13 20:55:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (27.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (22.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.37ms)
+Completed 200 OK in 101ms (Views: 18.2ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 20:56:05 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 20:56:05 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (24.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 81ms (Views: 1.0ms | ActiveRecord: 58.3ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:56:07 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/sprints/1" for ::1 at 2017-01-13 20:56:07 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (40.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mStory Load (37.2ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.64ms)
+Completed 200 OK in 188ms (Views: 1.3ms | ActiveRecord: 96.7ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:56:07 +0530
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.73ms)
+Completed 200 OK in 178ms (Views: 2.0ms | ActiveRecord: 98.0ms)
+
+
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+Started GET "/stories/1" for ::1 at 2017-01-13 20:56:07 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-13 20:56:07 +0530
+  [1m[36mStory Load (2.9ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (11.9ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+  [1m[36mStoryPoint Load (46.1ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+  [1m[36mStoryPoint Load (17.1ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 12.3ms)
+
+
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 46.8ms)
+
+
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 19.9ms)
+
+
+
+
+
+NoMethodError (undefined method `reveal_points' for #<Story:0x007ffae8de0d60>):
+NoMethodError (undefined method `reveal_points' for #<Story:0x007ffae8da85f0>):
+
+
+NoMethodError (undefined method `reveal_points' for #<Story:0x007ffaea65c2e0>):
+app/controllers/stories_controller.rb:22:in `create_data'
+app/controllers/stories_controller.rb:8:in `block in index'
+app/controllers/stories_controller.rb:8:in `index'
+app/controllers/stories_controller.rb:22:in `create_data'
+app/controllers/stories_controller.rb:64:in `show'
+
+app/controllers/stories_controller.rb:22:in `create_data'
+app/controllers/stories_controller.rb:64:in `show'
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (72.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (309.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `planning_poker_development`[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `planning_poker_test`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `planning_poker_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `planning_poker_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (147.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (186.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (31.0ms)[0m  [1m[34mSELECT GET_LOCK('4296706968443515710', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOrganizations (20161224052126)
+  [1m[35m (144.8ms)[0m  [1m[35mCREATE TABLE `organizations` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (32.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052126')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20161224052204)
+  [1m[35m (144.9ms)[0m  [1m[35mCREATE TABLE `projects` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `organization_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_projects_on_organization_id`  (`organization_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052204')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSprints (20161224052318)
+  [1m[35m (140.0ms)[0m  [1m[35mCREATE TABLE `sprints` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `project_id` int, `status` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sprints_on_project_id`  (`project_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052318')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStories (20161224053948)
+  [1m[35m (127.2ms)[0m  [1m[35mCREATE TABLE `stories` (`id` int AUTO_INCREMENT PRIMARY KEY, `story_no` varchar(255), `title` varchar(255), `description` text, `reveal_points` tinyint(1) DEFAULT 0, `estimated_points` int, `estimated_time` varchar(255), `sprint_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_stories_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224053948')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateChannels (20161224054022)
+  [1m[35m (164.1ms)[0m  [1m[35mCREATE TABLE `channels` (`id` int AUTO_INCREMENT PRIMARY KEY, `sprint_id` int, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_channels_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224054022')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20161224054654)
+  [1m[35m (151.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `organization_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_users_on_organization_id`  (`organization_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224054654')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStoryPoints (20161224055119)
+  [1m[35m (152.4ms)[0m  [1m[35mCREATE TABLE `story_points` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `story_id` int, `sprint_id` int, `estimated_points` int, `estimated_time` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_story_points_on_user_id`  (`user_id`),  INDEX `index_story_points_on_story_id`  (`story_id`),  INDEX `index_story_points_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224055119')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-01-13 15:27:50', '2017-01-13 15:27:50')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4296706968443515710')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (15.0ms)[0m  [1m[35mSHOW CREATE TABLE `channels`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'channels'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `organizations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'organizations'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `projects`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'projects'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `sprints`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'sprints'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `stories`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'stories'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `story_points`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'story_points'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `organizations` (`name`, `website`, `created_at`, `updated_at`) VALUES ('Srijan', 'http://srijan.net', '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `organization_id`, `created_at`, `updated_at`) VALUES ('HCAH', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `sprints` (`name`, `project_id`, `created_at`, `updated_at`) VALUES ('Sprint 1', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `stories` (`story_no`, `title`, `description`, `sprint_id`, `created_at`, `updated_at`) VALUES ('HCAH-001', 'Bootstrap ember', 'We have to bootstrap the emberjs application', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `stories` (`story_no`, `title`, `description`, `sprint_id`, `created_at`, `updated_at`) VALUES ('HCAH-002', 'Design planning poker board for UI', 'Create a UI for planning poker board', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `channels` (`sprint_id`, `name`, `created_at`, `updated_at`) VALUES (1, '1484321272.0972521', '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `organization_id`, `created_at`, `updated_at`) VALUES ('Naveen', 'Naveen@srijan.net', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `organization_id`, `created_at`, `updated_at`) VALUES ('Ashok', 'Ashok@srijan.net', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `organization_id`, `created_at`, `updated_at`) VALUES ('Biswajeet', 'Biswajeet@srijan.net', 1, '2017-01-13 15:27:52', '2017-01-13 15:27:52')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 20:58:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.9ms)
+Completed 200 OK in 26ms (Views: 5.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:58:03 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+Started GET "/sprints/1" for ::1 at 2017-01-13 20:58:03 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (1.2ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStory Load (3.4ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mStoryPoint Load (0.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Completed 200 OK in 67ms (Views: 1.0ms | ActiveRecord: 18.0ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.53ms)
+Completed 200 OK in 66ms (Views: 1.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:58:03 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+Started GET "/stories/2" for ::1 at 2017-01-13 20:58:03 +0530
+Started GET "/stories/1" for ::1 at 2017-01-13 20:58:03 +0530
+Processing by StoriesController#show as JSONAPI
+  [1m[36mStoryPoint Load (2.1ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+  Parameters: {"id"=>"2"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.06ms)
+Completed 200 OK in 30ms (Views: 3.5ms | ActiveRecord: 2.8ms)
+
+
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (5.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStory Load (2.8ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+  [1m[36mStoryPoint Load (3.1ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+Completed 200 OK in 14ms (Views: 1.4ms | ActiveRecord: 6.1ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.71ms)
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 20:58:13 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:58:15 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+Started GET "/sprints/1" for ::1 at 2017-01-13 20:58:15 +0530
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStoryPoint Load (2.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mSprint Load (2.1ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (4.0ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.59ms)
+  [1m[36mStory Load (2.1ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 8.5ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.63ms)
+Completed 200 OK in 12ms (Views: 2.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 20:58:15 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.9ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (1.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.32ms)
+Completed 200 OK in 15ms (Views: 3.3ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (90.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `planning_poker_development`[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `planning_poker_test`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `planning_poker_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `planning_poker_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (60.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (230.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4296706968443515710', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOrganizations (20161224052126)
+  [1m[35m (134.5ms)[0m  [1m[35mCREATE TABLE `organizations` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `website` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052126')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20161224052204)
+  [1m[35m (139.6ms)[0m  [1m[35mCREATE TABLE `projects` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `organization_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_projects_on_organization_id`  (`organization_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052204')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSprints (20161224052318)
+  [1m[35m (174.3ms)[0m  [1m[35mCREATE TABLE `sprints` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `project_id` int, `status` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_sprints_on_project_id`  (`project_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224052318')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStories (20161224053948)
+  [1m[35m (207.2ms)[0m  [1m[35mCREATE TABLE `stories` (`id` int AUTO_INCREMENT PRIMARY KEY, `story_no` varchar(255), `title` varchar(255), `description` text, `reveal_points` tinyint(1) DEFAULT 0, `estimated_points` int, `estimated_time` varchar(255), `sprint_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_stories_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224053948')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateChannels (20161224054022)
+  [1m[35m (185.0ms)[0m  [1m[35mCREATE TABLE `channels` (`id` int AUTO_INCREMENT PRIMARY KEY, `sprint_id` int, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_channels_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224054022')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20161224054654)
+  [1m[35m (116.2ms)[0m  [1m[35mCREATE TABLE `users` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `role` varchar(255), `organization_id` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_users_on_organization_id`  (`organization_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224054654')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStoryPoints (20161224055119)
+  [1m[35m (142.8ms)[0m  [1m[35mCREATE TABLE `story_points` (`id` int AUTO_INCREMENT PRIMARY KEY, `user_id` int, `story_id` int, `sprint_id` int, `estimated_points` int, `estimated_time` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_story_points_on_user_id`  (`user_id`),  INDEX `index_story_points_on_story_id`  (`story_id`),  INDEX `index_story_points_on_sprint_id`  (`sprint_id`)) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20161224055119')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4296706968443515710')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `channels`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'channels'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `organizations`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'organizations'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `projects`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'projects'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `sprints`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'sprints'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `stories`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'stories'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `story_points`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'story_points'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'users'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `organizations` (`name`, `website`, `created_at`, `updated_at`) VALUES ('Srijan', 'http://srijan.net', '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `projects` (`name`, `organization_id`, `created_at`, `updated_at`) VALUES ('HCAH', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `sprints` (`name`, `project_id`, `created_at`, `updated_at`) VALUES ('Sprint 1', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `stories` (`story_no`, `title`, `description`, `sprint_id`, `created_at`, `updated_at`) VALUES ('HCAH-001', 'Bootstrap ember', 'We have to bootstrap the emberjs application', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `stories` (`story_no`, `title`, `description`, `sprint_id`, `created_at`, `updated_at`) VALUES ('HCAH-002', 'Design planning poker board for UI', 'Create a UI for planning poker board', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `channels` (`sprint_id`, `name`, `created_at`, `updated_at`) VALUES (1, '1484322002.319211', '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `role`, `organization_id`, `created_at`, `updated_at`) VALUES ('Admin', 'Admin@srijan.net', 'admin', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `role`, `organization_id`, `created_at`, `updated_at`) VALUES ('Naveen', 'Naveen@srijan.net', 'organizer', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `role`, `organization_id`, `created_at`, `updated_at`) VALUES ('Ashok', 'Ashok@srijan.net', 'participant', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `role`, `organization_id`, `created_at`, `updated_at`) VALUES ('Biswajeet', 'Biswajeet@srijan.net', 'participant', 1, '2017-01-13 15:40:02', '2017-01-13 15:40:02')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:10:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (7.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 32ms (Views: 4.3ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:10:23 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+Started GET "/sprints/1" for ::1 at 2017-01-13 21:10:23 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (4.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+  [1m[36mStory Load (2.0ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.53ms)
+Completed 200 OK in 73ms (Views: 1.1ms | ActiveRecord: 11.3ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.47ms)
+Completed 200 OK in 80ms (Views: 1.0ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:10:23 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.57ms)
+Completed 200 OK in 14ms (Views: 2.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:14:33 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.7ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:14:33 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:14:33 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.88ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:21:15 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:21:15 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:21:15 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.86ms)
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:22:11 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.44ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:22:11 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.91ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:22:11 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:29:20 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.56ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:29:20 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.41ms)
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:29:21 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.0ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:30:04 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:30:04 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:30:04 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.23ms)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:30:43 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.07ms)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:30:45 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:30:47 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/sprints/1" for ::1 at 2017-01-13 21:30:47 +0530
+  [1m[36mStoryPoint Load (1.8ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStoryPoint Load (3.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.46ms)
+  [1m[36mSprint Load (2.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 14ms (Views: 2.1ms | ActiveRecord: 5.8ms)
+
+
+  [1m[36mStory Load (3.7ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.95ms)
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:30:47 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (1.1ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (1.2ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.62ms)
+Completed 200 OK in 13ms (Views: 2.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:30:47 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+Started GET "/stories/2" for ::1 at 2017-01-13 21:30:47 +0530
+  [1m[36mStory Load (1.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (3.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.78ms)
+Completed 200 OK in 13ms (Views: 1.6ms | ActiveRecord: 5.2ms)
+
+
+  [1m[36mStory Load (5.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.68ms)
+Completed 200 OK in 12ms (Views: 1.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:31:21 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.5ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:31:21 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:31:21 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:31:25 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:31:25 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.37ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:31:26 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:32:33 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.3ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:32:33 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:32:33 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.57ms)
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:32:58 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:32:58 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:32:59 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:33:34 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:33:34 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:33:34 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.63ms)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:34:40 +0530
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:34:40 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 24ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/stories/1" for ::1 at 2017-01-13 21:34:40 +0530
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Completed 200 OK in 30ms (Views: 9.0ms | ActiveRecord: 1.9ms)
+
+
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.76ms)
+Completed 200 OK in 40ms (Views: 1.6ms | ActiveRecord: 4.8ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `users`.`role` FROM `users`[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `users`.`role`, `users`.`email` FROM `users`[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:36:12 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.3ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.57ms)
+Completed 200 OK in 22ms (Views: 2.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users?filter%5Bid%5D=1&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:36:13 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"1", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Started GET "/sprints/1" for ::1 at 2017-01-13 21:36:13 +0530
+  [1m[36mStoryPoint Load (1.2ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1[0m
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStoryPoint Load (4.2ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 1 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.55ms)
+Completed 200 OK in 17ms (Views: 1.5ms | ActiveRecord: 5.9ms)
+
+
+  [1m[36mSprint Load (3.1ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:36:13 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.77ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/stories/2" for ::1 at 2017-01-13 21:36:13 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.62ms)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:36:53 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:36:54 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:36:59 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2017-01-13 21:37:04 +0530
+Processing by ApplicationController#login as */*
+  Parameters: {"email"=>"Naveen@srijan.net"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'Naveen@srijan.net' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:37:14 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 2[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 2 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.31ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-13 21:37:14 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.74ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:37:14 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.63ms)
+Completed 200 OK in 7ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/2" for ::1 at 2017-01-13 21:37:14 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"2"}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:43:40 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:43:40 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:43:40 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (1.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.64ms)
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:43:52 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:43:52 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:43:52 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.43ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:44:02 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.32ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:44:02 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.32ms)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:44:02 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:45:13 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:45:13 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.47ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:45:13 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.65ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:47:08 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:47:08 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:47:09 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.68ms)
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:47:24 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:47:24 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.4ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:47:24 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.7ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/login" for ::1 at 2017-01-13 21:48:34 +0530
+Processing by ApplicationController#login as */*
+  Parameters: {"email"=>"Ashok@srijan.net"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'Ashok@srijan.net' LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:48:36 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users?filter%5Bid%5D=3&filter%5Brelationships%5D=true&filter%5Bsingle_record%5D=true&filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:48:42 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"3", "relationships"=>"true", "single_record"=>"true", "sprint_id"=>"1"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 3[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`user_id` = 3 AND `story_points`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sprints/1" for ::1 at 2017-01-13 21:48:42 +0530
+Processing by SprintsController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/stories?filter%5Bsprint_id%5D=1" for ::1 at 2017-01-13 21:48:42 +0530
+Processing by StoriesController#index as JSONAPI
+  Parameters: {"filter"=>{"sprint_id"=>"1"}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT `stories`.* FROM `stories` WHERE `stories`.`sprint_id` = 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` IN (1, 2)[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.82ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:48:42 +0530
+Processing by StoriesController#show as JSONAPI
+Started GET "/stories/2" for ::1 at 2017-01-13 21:48:42 +0530
+  Parameters: {"id"=>"1"}
+Processing by StoriesController#show as JSONAPI
+  [1m[36mStory Load (1.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  Parameters: {"id"=>"2"}
+  [1m[36mStoryPoint Load (1.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.9ms)
+
+
+  [1m[36mStory Load (4.0ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 2 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/story-points" for ::1 at 2017-01-13 21:48:58 +0530
+Processing by StoryPointsController#create as JSONAPI
+  Parameters: {"data"=>{"attributes"=>{"estimated_points"=>8, "estimated_time"=>nil}, "relationships"=>{"user"=>{"data"=>{"type"=>"users", "id"=>"2"}}, "story"=>{"data"=>{"type"=>"stories", "id"=>"1"}}}, "type"=>"story-points"}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mSprint Load (0.3ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `story_points` (`user_id`, `story_id`, `sprint_id`, `estimated_points`, `created_at`, `updated_at`) VALUES (2, 1, 1, 8, '2017-01-13 16:18:58', '2017-01-13 16:18:58')[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 200 OK in 32ms (Views: 0.7ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:49:04 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (1.2ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.9ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+Started PATCH "/stories/1" for ::1 at 2017-01-13 21:49:04 +0530
+Processing by StoriesController#update as JSONAPI
+  Parameters: {"data"=>{"id"=>"1", "attributes"=>{"story_no"=>"HCAH-001", "reveal_points"=>true, "created_at"=>"2017-01-13T15:40:02.000Z", "updated_at"=>"2017-01-13T15:40:02.000Z"}, "relationships"=>{"sprint"=>{"data"=>{"type"=>"sprints", "id"=>"1"}}}, "type"=>"stories"}, "id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.3ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.27ms)
+Completed 200 OK in 39ms (Views: 2.1ms | ActiveRecord: 3.4ms)
+
+
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (71.6ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 1, `updated_at` = '2017-01-13 16:19:04' WHERE `stories`.`id` = 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.09ms)
+Completed 200 OK in 152ms (Views: 1.9ms | ActiveRecord: 79.5ms)
+
+
+  [1m[35m (42.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `story_points`[0m
+  [1m[35mSQL (136.7ms)[0m  [1m[31mDELETE FROM `story_points`[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:49:42 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.6ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:49:42 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:49:42 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.69ms)
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:50:09 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.42ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=3&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:50:09 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"3", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:50:10 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.37ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:50:10 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.67ms)
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:50:10 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.43ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:50:10 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.71ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` ORDER BY `stories`.`id` ASC LIMIT 1[0m
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` ORDER BY `stories`.`id` ASC LIMIT 1[0m
+  [1m[36mStory Load (2.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` ORDER BY `stories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 0, `updated_at` = '2017-01-13 16:20:56' WHERE `stories`.`id` = 1[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:51:00 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:51:00 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:51:00 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.38ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/story-points" for ::1 at 2017-01-13 21:51:04 +0530
+Processing by StoryPointsController#create as JSONAPI
+  Parameters: {"data"=>{"attributes"=>{"estimated_points"=>21, "estimated_time"=>nil}, "relationships"=>{"user"=>{"data"=>{"type"=>"users", "id"=>"2"}}, "story"=>{"data"=>{"type"=>"stories", "id"=>"1"}}}, "type"=>"story-points"}}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `story_points` (`user_id`, `story_id`, `sprint_id`, `estimated_points`, `created_at`, `updated_at`) VALUES (2, 1, 1, 21, '2017-01-13 16:21:04', '2017-01-13 16:21:04')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 3.7ms)
+
+
+Started PATCH "/stories/1" for ::1 at 2017-01-13 21:51:08 +0530
+Processing by StoriesController#update as JSONAPI
+  Parameters: {"data"=>{"id"=>"1", "attributes"=>{"story_no"=>"HCAH-001", "reveal_points"=>true, "created_at"=>"2017-01-13T15:40:02.000Z", "updated_at"=>"2017-01-13T16:20:56.000Z"}, "relationships"=>{"sprint"=>{"data"=>{"type"=>"sprints", "id"=>"1"}}}, "type"=>"stories"}, "id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+Started GET "/stories/1" for ::1 at 2017-01-13 21:51:08 +0530
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+Processing by StoriesController#show as JSONAPI
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (0.9ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (2.2ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 1, `updated_at` = '2017-01-13 16:21:08' WHERE `stories`.`id` = 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+Completed 200 OK in 20ms (Views: 1.1ms | ActiveRecord: 7.0ms)
+
+
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.02ms)
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:57:51 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (2.2ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:57:51 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:57:51 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.6ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.99ms)
+Completed 200 OK in 10ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` ORDER BY `stories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 0, `updated_at` = '2017-01-13 16:28:16' WHERE `stories`.`id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:58:24 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.34ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:58:24 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:58:24 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.94ms)
+Completed 200 OK in 11ms (Views: 1.6ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/stories/1" for ::1 at 2017-01-13 21:58:26 +0530
+Processing by StoriesController#update as JSONAPI
+  Parameters: {"data"=>{"id"=>"1", "attributes"=>{"story_no"=>"HCAH-001", "reveal_points"=>true, "created_at"=>"2017-01-13T15:40:02.000Z", "updated_at"=>"2017-01-13T16:28:16.000Z"}, "relationships"=>{"sprint"=>{"data"=>{"type"=>"sprints", "id"=>"1"}}}, "type"=>"stories"}, "id"=>"1"}
+  [1m[36mStory Load (0.4ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.4ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+Started GET "/stories/1" for ::1 at 2017-01-13 21:58:26 +0530
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mSprint Load (1.8ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[36mStory Load (1.9ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 1, `updated_at` = '2017-01-13 16:28:26' WHERE `stories`.`id` = 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 6.6ms)
+
+
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.88ms)
+Completed 200 OK in 13ms (Views: 1.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:59:39 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (1.5ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:59:39 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:59:39 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (2.3ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.99ms)
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 3.8ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 21:59:45 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:59:45 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:59:45 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.5ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.52ms)
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 21:59:55 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.31ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 21:59:55 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 21:59:56 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.95ms)
+Completed 200 OK in 11ms (Views: 2.0ms | ActiveRecord: 1.6ms)
+
+
+  [1m[36mStory Load (0.7ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` ORDER BY `stories`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSprint Load (0.4ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 0, `updated_at` = '2017-01-13 16:30:19' WHERE `stories`.`id` = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/sprints" for ::1 at 2017-01-13 22:00:25 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (1.0ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 22:00:25 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.36ms)
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 22:00:26 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.6ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.5ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.06ms)
+Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/stories/1" for ::1 at 2017-01-13 22:00:27 +0530
+Processing by StoriesController#show as JSONAPI
+  Parameters: {"id"=>"1"}
+  [1m[36mStory Load (0.8ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+Started PATCH "/stories/1" for ::1 at 2017-01-13 22:00:27 +0530
+  [1m[36mStoryPoint Load (0.9ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+Processing by StoriesController#update as JSONAPI
+  Parameters: {"data"=>{"id"=>"1", "attributes"=>{"story_no"=>"HCAH-001", "reveal_points"=>true, "created_at"=>"2017-01-13T15:40:02.000Z", "updated_at"=>"2017-01-13T16:30:19.000Z"}, "relationships"=>{"sprint"=>{"data"=>{"type"=>"sprints", "id"=>"1"}}}, "type"=>"stories"}, "id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.45ms)
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 4.1ms)
+
+
+  [1m[36mStory Load (3.2ms)[0m  [1m[34mSELECT  `stories`.* FROM `stories` WHERE `stories`.`id` = 1 LIMIT 1[0m
+  [1m[36mStoryPoint Load (0.7ms)[0m  [1m[34mSELECT `story_points`.* FROM `story_points` WHERE `story_points`.`story_id` = 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSprint Load (0.5ms)[0m  [1m[34mSELECT  `sprints`.* FROM `sprints` WHERE `sprints`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `stories` SET `reveal_points` = 1, `updated_at` = '2017-01-13 16:30:27' WHERE `stories`.`id` = 1[0m
+  [1m[35m (44.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.49ms)
+Completed 200 OK in 64ms (Views: 0.9ms | ActiveRecord: 49.8ms)
+
+
+Started GET "/sprints" for ::1 at 2017-01-13 22:00:51 +0530
+Processing by SprintsController#index as JSONAPI
+  [1m[36mSprint Load (1.0ms)[0m  [1m[34mSELECT `sprints`.* FROM `sprints`[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?filter%5Bid%5D=2&filter%5Brelationships%5D=false&filter%5Bsingle_record%5D=true" for ::1 at 2017-01-13 22:00:51 +0530
+Processing by UsersController#index as JSONAPI
+  Parameters: {"filter"=>{"id"=>"2", "relationships"=>"false", "single_record"=>"true"}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.39ms)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 2.2ms)
