@@ -1,4 +1,4 @@
-# Excercises - NodeJs
+# Exercises - NodeJs
 
  ### Exercise #1
  Odometer skips the digit 4 https://github.com/santhoshver/exercises/tree/master/exercise-1
